@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Automotives</title>
+    <link rel="stylesheet" href="index.css">
+ 
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+    <header>
+      <div class = "nav container">
+        <i class='bx bx-menu' id = "menu-icon"></i>
+        <a href="#" class="logo">Elit<span>Automotives</span></a>
+       
+        <ul class="navbar">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#cars">cars</a></li>
+          <li><a href="#contact">contact us</a></li>
+          <li><a href="#payment">Calculate payment</a></li>
+
+          </ul>
+
+          <i class='bx bx-search' id="search-icon"></i>
+
+          <div class="search-box container">
+              <input type="search" name="" id="" placeholder="Search here...">
+          </div>
+      </div>
+    </header>
+    <section class ="home" id="home">
+      <div class="home-text">
+
+        <H1>We have Eveything <br> your <span> car</span> need</H1>
+        <p>We have clean, reliable, and luxurious automobiles. Browse through our inventory and look to buy your future car!</p>
+        <a href="#" class="btn"> Browse now</a>
+      </div>
+
+    </section>
+  <!-- Cars Section -->
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>Cars for sale</span>
+            <h2>We have all types cars</h2>
+            <p>Browse through our inventory and see what interests you</p>
+        </div>
+        <!-- Cars Container -->
+        <div class="cars-container container">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="img/BMW.jpg" alt="">
+                <h2>Click to view car</h2>
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="img/toyota.jpg" alt="">
+                <h2>Click to view car</h2>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="img/infiniti.jpg" alt="">
+                <h2>Click to view car </h2>
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="img/nissan.jpg" alt="">
+                <h2>Click to view car</h2>
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="img/porche.jpg" alt="">
+                <h2>Click to view car</h2>
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="img/range-rover.jpg" alt="">
+                <h2>Click to view car</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="heading">
+          <h2>Contact us now</h2>
+          <p>Are you intrested in any cars? Make sure to leave your name and number to let us know what you are intrested in!</p>
+      </div>
+  
+
+
+          <form action="/action_page.php">
+            <table class="center">
+              <tr>
+
+                  <td>
+                      <input id="nameID" type="text" value="Enter Name" size="20">
+                  </td>
+              </tr>
+              <tr>
+
+                  <td>
+                      <input id="emailID" type="text" value="Enter Email" size="20">
+                  </td>
+              </tr>
+              <tr>
+
+                  <td>
+                      <input id="zipID" type="text" value="Message.." size="20" >
+                      <input type="submit" value="Submit">
+                  </td>
+              </tr>
+              
+          </table>
+         
+          </form>
+        
+        </div>
+      </div>
+    
+ </section>
+
+
+
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
