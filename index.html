@@ -6,121 +6,541 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Automotives</title>
     <link rel="stylesheet" href="index.css">
- 
+
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css' rel='stylesheet' >
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   </head>
   <body>
+
+
+
+
     <header>
       <div class = "nav container">
         <i class='bx bx-menu' id = "menu-icon"></i>
-        <a href="#" class="logo">Elite<span>Automotives</span></a>
-       
+        <p  class="logo">Elite<span>Automotives</span></p>
+
         <ul class="navbar">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#cars">cars</a></li>
           <li><a href="#contact">contact us</a></li>
-          <li><a href="#payment">Calculate payment</a></li>
+
+          <li><a href="#carsforsale">More about us</a></li>
+
 
           </ul>
 
-          <i class='bx bx-search' id="search-icon"></i>
 
-          <div class="search-box container">
-              <input type="search" placeholder="Search here...">
-          </div>
       </div>
     </header>
     <section class ="home" id="home">
       <div class="home-text">
 
         <H1>Let us help you buy <br> the <span> car</span> of your dream</H1>
-        <p>We have clean, reliable, and luxurious automobiles. Browse through our inventory and look to buy your future car!</p>
-        <a href="#" class="btn"> Browse now</a>
+        <p class = "message">We have clean, reliable, and luxurious automobiles. Browse through our inventory and look to buy your future car!</p>
+        <a href="#cars" class="btn"> Browse now</a>
+
       </div>
 
     </section>
 
     <section class="cars" id="cars">
-        <div class="heading">
-            <span>Cars for sale</span>
-            <h2>We have all types of cars</h2>
-            <p>Browse through our inventory and see what interests you</p>
-        </div>
+      <div class="heading">
+          <h2>We have all types of cars</h2>
+          <span>Featured Cars</span>
+
+      </div>
         <!-- Cars Container -->
-        <div class="cars-container container">
-            <!-- Box 1 -->
-            <div class="box">
-                <img src="img/BMW.jpg" alt="">
-                <h2>Click to view car</h2>
+        <div class="container text-center">
+
+            <div class="row flow-offset-1 product-info">
+              <div class="col-lg-4">
+                <div class="w3-content w3-display-container">
+                  <img class="mySlides" src="img/zaki1.jpg" width="370" height="274">
+                  <img class="mySlides" src="img/zaki23.jpg" width="370" height="274">
+                  <img class="mySlides" src="img/zaki_in.jpg"  width="370" height="274">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+              </div>
+              <div class="col-lg-8">
+                <div>
+                  <h3>
+                    <p class="car-title">2022 BMW M340</p>
+                  </h3>
+                  <p class="heading-4 product-info-price">
+                    <p class ="car-price"> $65,000</p>
+                  </p>
+                  <p class ="car-miles">Mileage: 1,869 Miles</p>
+
+                  <div class="row row-sm-justify">
+                    <div class="col-sm-4 col-lg-3 text-sm-left">
+                      <h6 class="info">Specs</h6>
+                      <ul class="product-info-list text-sm-left ">
+                        <li>3.0 Twin Turbo</li>
+                        <li>Automatic 6-Speed</li>
+                        <li>18 city / 28 hwy</li>
+                        <li>Gasoline</li>
+                        <li>AWD</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-lg-5 text-sm-left">
+                      <h6  class="info">Highlights</h6>
+                      <ul class="product-info-list text-sm-left preffix-1">
+                        <li>Navigation</li>
+                        <li>Audio Controls on Wheel</li>
+                        <li>Great Condition</li>
+                        <li>Automatic Climate Control</li>
+                        <li>Good MPG</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                      <div class="inline-block">
+
+                        <ul class="product-info-list-1">
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-calendar"></span>
+                              </div>
+                              <i class='bx bx-calendar'></i>
+                                Listed 5 days
+
+                            </div>
+
+                          </li>
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-eye"></span>
+                              </div>
+                              <i class='bx bx-male'></i>
+                                14 Views
+
+                            </div>
+
+                          </li>
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-comment-o"></span>
+                              </div>
+                              <i class='bx bxs-user-check'></i>
+                                available
+
+                            </div>
+
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
             </div>
-            <!-- Box 2 -->
-            <div class="box">
-                <img src="img/toyota.jpg" alt="">
-                <h2>Click to view car</h2>
+            <hr>
+            <div class="row flow-offset-1 product-info">
+              <div class="col-lg-4 text-center text-md-left wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                <div class="w3-content w3-display-container">
+                <img  src="img/adam.jpg" width="370" height="274" alt="">
+
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+              </div>
+              <div class="col-lg-8">
+                <div class="product-info-body text-center text-md-left">
+                  <h3>
+                      <p class="car-title">2018 Infiniti Q50</p>
+                  </h3>
+                  <p class="heading-4 product-info-price">
+                    <p class ="car-price"> $32,000</p>
+
+                  <p class ="car-miles">Mileage: 31,598 Miles</p>
+
+                  <div class="row row-sm-justify">
+                    <div class="col-sm-4 col-lg-3 text-sm-left">
+                      <h6 class="info">Specs</h6>
+                      <ul class="product-info-list text-sm-left ">
+                        <li>3.0 Twin Turbo</li>
+                        <li>Automatic</li>
+                        <li>21 city / 29 hwy</li>
+                        <li>Interior - black</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-lg-5 text-sm-left">
+                      <h6  class="info">Highlights</h6>
+                      <ul class="product-info-list text-sm-left preffix-1">
+                        <li>Sunroof</li>
+                        <li>Good MPG</li>
+                        <li>Power Windows</li>
+                        <li>Daytime Running Lights</li>
+                        <li>Cruise Control</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                      <div class="inline-block">
+
+                        <ul class="product-info-list-1">
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-calendar"></span>
+                              </div>
+                              <i class='bx bx-calendar'></i>
+                                Listed 5 days
+                            </div>
+
+                          </li>
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-eye"></span>
+                              </div>
+                              <i class='bx bx-male'></i>
+                                14 Views
+                            </div>
+
+                          </li>
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-comment-o"></span>
+                              </div>
+                              <i class='bx bxs-user-check'></i>
+                                available
+                            </div>
+
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
             </div>
-            <!-- Box 3 -->
-            <div class="box">
-                <img src="img/infiniti.jpg" alt="">
-                <h2>Click to view car </h2>
+            <hr>
+            <div class="row flow-offset-1 product-info">
+              <div class="col-lg-4 text-center text-md-left wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                <div class="w3-content w3-display-container">
+                <img src="img/izzy.jpg" width="370" height="274" alt="">
+
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+              </div>
+              <div class="col-lg-8">
+                <div class="product-info-body text-center text-md-left">
+                  <h3>
+                  <p class="car-title">2016 BMW 335xi</p>
+                  </h3>
+                  <p class="heading-4 product-info-price">
+                    <p class ="car-price"> $28,000</p>
+                  </p>
+                <p class ="car-miles">Mileage: 55,000 Miles</p>
+
+                  <div class="row row-sm-justify">
+                    <div class="col-sm-4 col-lg-3 text-sm-left">
+                      <h6 class="info">Specs</h6>
+                      <ul class="product-info-list text-sm-left ">
+                        <li>3.0 Turbo</li>
+                        <li>Automatic 5-Speed</li>
+                        <li>15 city / 21 hwy</li>
+                        <li>Gasoline</li>
+                        <li>RWD</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-lg-5 text-sm-left">
+                      <h6  class="info">Highlights</h6>
+                      <ul class="product-info-list text-sm-left preffix-1">
+                        <li>Audio Controls on Steering Wheel</li>
+                        <li>Automatic Climate Control</li>
+                        <li>Climate Control</li>
+                        <li>Keyless Entry</li>
+                        <li>Traction Control</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                      <div class="inline-block">
+
+                        <ul class="product-info-list-1">
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-calendar"></span>
+                              </div>
+                              <i class='bx bx-calendar'></i>
+                                Listed 5 days
+                            </div>
+
+                          </li>
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-eye"></span>
+                              </div>
+                              <i class='bx bx-male'></i>
+                                60 Views
+                            </div>
+
+                          </li>
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-comment-o"></span>
+                              </div>
+                              <i class='bx bxs-user-check'></i>
+                                available
+
+                            </div>
+
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
             </div>
-            <!-- Box 4 -->
-            <div class="box">
-                <img src="img/nissan.jpg" alt="">
-                <h2>Click to view car</h2>
+            <hr>
+            <div class="row flow-offset-1 product-info">
+              <div class="col-lg-4 text-center text-md-left wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                <div class="w3-content w3-display-container">
+                <img src="img/david.jpg" width="370" height="274" alt="">
+
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+              </div>
+              <div class="col-lg-8">
+                <div class="product-info-body text-center text-md-left">
+                  <h3>
+                    <p class="car-title">2016 Mustang Gt</p>
+                  </h3>
+                  <p class="heading-4 product-info-price">
+                    <p class ="car-price"> $36,000</p>
+                  </p>
+                  <p class ="car-miles">Mileage: 17,065 Miles</p>
+
+                  <div class="row row-sm-justify">
+                    <div class="col-sm-4 col-lg-3 text-sm-left">
+                      <h6 class="info">Specs</h6>
+                      <ul class="product-info-list text-sm-left ">
+                        <li>5.0 V8</li>
+                        <li>Manual 5-Speed</li>
+                        <li>20 city / 27 hwy</li>
+                        <li>Gasoline</li>
+                        <li>RWD</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-lg-5 text-sm-left">
+                      <h6 class="text-capitalize preffix-1">Highlights</h6>
+                      <ul class="product-info-list text-sm-left preffix-1">
+                        <li>Good MPG</li>
+                        <li>Keyless Entry</li>
+                        <li>Rear Spoiler</li>
+                        <li>Power Windows</li>
+                        <li>Cruise Control</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                      <div class="inline-block">
+
+                        <ul class="product-info-list-1">
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-calendar"></span>
+                              </div>
+                              <i class='bx bx-calendar'></i>
+                                                              Listed 5 days
+                            </div>
+                          </li>
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-eye"></span>
+                              </div>
+                              <i class='bx bx-male'></i>
+                                14 Views
+                            </div>
+
+                          </li>
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-comment-o"></span>
+                              </div>
+                              <i class='bx bxs-user-check'></i>
+                                available
+                            </div>
+
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Box 5 -->
+            <hr>
+            <div class="row flow-offset-1 product-info">
+              <div class="col-lg-4 text-center text-md-left wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                <div class="w3-content w3-display-container">
+                <img src="img/sprinter1.jpg" width="370" height="272" alt="">
+
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+              </div>
+              <div class="col-lg-8">
+                <div class="product-info-body text-center text-md-left">
+                  <h3>
+                      <p class="car-title">2021 Mercedes sprinter </p>
+                  </h3>
+                  <p class="heading-4 product-info-price">
+                    <p class ="car-price"> $68,000</p>
+                  </p>
+                    <p class ="car-miles">Mileage: 2,568 Miles</p>
+                  <div class="row row-sm-justify">
+                    <div class="col-sm-4 col-lg-3 text-sm-left">
+                      <h6 class="info">Specs</h6>
+                      <ul class="product-info-list text-sm-left ">
+                        <li>2.0 Turbo</li>
+                        <li>Cvt</li>
+                        <li>27 city / 38 hwy</li>
+                        <li>Gasoline</li>
+                        <li>FWD</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-lg-5 text-sm-left">
+                      <h6  class="info">Highlights</h6>
+                      <ul class="product-info-list text-sm-left preffix-1">
+                        <li>New Tires</li>
+                        <li>Audio Controls on Steering Wheel</li>
+                        <li>Radio data system</li>
+                        <li>Great MPG</li>
+                        <li>Fully Loaded</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3">
+                      <div class="inline-block">
+                        <ul class="product-info-list-1">
+                          <li>
+                            <div class="box">
+                              <div class="box__left box__middle">
+                                <span class="icon icon-xs icon-default fa-calendar"></span>
+                              </div>
+                              <i class='bx bx-calendar'></i>
+                                Listed 5 days
+
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="box">
+                          <div class="box__left box__middle">
+                        <span class="icon icon-xs icon-default fa-eye"></span>
+                        </div>
+                          <i class='bx bx-male'></i>
+                             14 Views
+
+                      </div>
+
+                    </li>
+                  <li>
             <div class="box">
-                <img src="img/porche.jpg" alt="">
-                <h2>Click to view car</h2>
+              <div class="box__left box__middle">
+              <span class="icon icon-xs icon-default fa-comment-o"></span>
+              </div>
+          <i class='bx bxs-user-check'></i>
+                available
+
+                </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
             </div>
-            <!-- Box 6 -->
-            <div class="box">
-                <img src="img/range-rover.jpg" alt="">
-                <h2>Click to view car</h2>
-            </div>
-        </div>
+            <hr>
 
     </section>
 
     <section class="contact" id="contact">
-      <div class="heading">
+      <div class="headings">
           <h2>Contact us now</h2>
           <p>Are you intrested in any cars? Make sure to leave your name and number to let us know what you are intrested in</p>
       </div>
-  
 
 
-          <form action="/action_page.php">
-            <table class="center">
-              <tr>
 
-                  <td>
-                      <input id="nameID" type="text" value="Enter Name" size="20">
-                  </td>
-              </tr>
-              <tr>
 
-                  <td>
-                      <input id="emailID" type="text" value="Enter Email" size="20">
-                  </td>
-              </tr>
-              <tr>
+      <form class="contact-form center" action ="contactform.php" method="post">
+        <table class="center">
+          <tr>
+            <td>
+        <input type="text" name="name" placeholder="Full name">
+      </tr>
+    </td>
+        <tr>
+          <td>
 
-                  <td>
-                      <input id="zipID" type="text" value="Message.." size="20" >
-                      <input type="submit" value="Submit">
-                  </td>
-              </tr>
-              
-          </table>
-         
-          </form>
-        
-       
-      
-    
+        <input type="text" name="mail" placeholder="your e-mail">
+      </tr>
+    </td>
+        <tr>
+          <td>
+        <input type="text" name="subject" placeholder="Subject">
+      </tr>
+    </td>
+        <tr>
+          <td>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" name="Submit">SEND MAIL</button>
+      </tr>
+    </td>
+      </table>
+      </form>
+
+
+
+
+
  </section>
+
+
 
 
 
